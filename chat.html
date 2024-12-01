@@ -126,7 +126,7 @@
         const roomId = window.location.pathname.split('/')[1] || "default_room";
         const avatarPath = "https://iili.io/20rvmEN.md.jpg";
 
-        const socket = io("https://p2p-deployment-1.onrender.com");
+        const socket = io("https://p2p-deployment.onrender.com");
 
         socket.on("connect", () => {
             socket.emit("joinRoom", { roomId });
